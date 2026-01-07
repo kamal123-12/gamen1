@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>最終発表 用 レイアウト</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+
+    <!-- 上段：プログラム名・開発者 -->
+    <header class="top-section">
+      <h1 class="program-title">（プログラム名を書いてください）</h1>
+      <p class="developer-name">開発者：（学籍番号と氏名を書いてください）</p>
+    </header>
+
+    <!-- 中段：左＝動作イメージ画像 / 右＝概要・アピールポイント -->
+    <main class="middle-section">
+
+      <!-- 左：動作イメージ画像（images/image.png を表示） -->
+      <section class="preview-area">
+        <h2 class="section-title">プログラム動作イメージ</h2>
+        <div class="preview-box">
+          <!-- 各自が images フォルダに image.png ファイルを保存 -->
+          <img
+            src="image/image.png.png"
+            alt="プログラム動作イメージ"
+            class="preview-image"
+          />
+        </div>
+      </section>
+
+      <!-- 右：概要とアピールポイント -->
+      <section class="description-area">
+        <h2 class="section-title">プログラム概要とアピールポイント</h2>
+        <div class="description-box">
+          <h3>概要</h3>
+          <p>
+            （基本（きほん）ルール）<br />
+            （成長（せいちょう）と難易度（なんいど））<br />
+            （ゲームオーバー条件（じょうけん））<br />
+          </p>
+
+          <h3>アピールポイント</h3>
+          <ul>
+            <li>（データ構造（こうぞう）の活用（かつよう）:
+
+「ヘビの体（からだ）の動（うご）きを、座標（ざひょう）データの配列（はいれつ）として管理（かんり）し、効率（こうりつ）よく動（うご）かす仕組み（しくみ）を実装（じっそう）しました。」）</li>
+            <li>（当たり判定（あたりはんてい）:
+
+「頭（あたま）が自分（じぶん）の体（からだ）にぶつかったかどうかを、一瞬（いっしゅん）で正確（せいかく）に判定（はんてい）するプログラムを書（か）きました。）</li>
+            <li>（操作性（そうさせい）:
+
+「スマホでも遊（あそ）びやすいように、スワイプ操作（そうさ）に対応（たいおう）させました。」）</li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 下段：開発環境・プログラム起動ボタン -->
+    <footer class="bottom-section">
+
+      <div class="info-row">
+        <span class="info-label">開発環境：</span>
+        <span class="info-value">
+          GitHub（HTML / CSS / JavaScript）
+        </span>
+      </div>
+
+      <div class="info-row">
+        <label class="info-label" for="program-path">
+          index.html の場所：
+        </label>
+        <input
+          id="program-path"
+          class="path-input"
+          type="text"
+          placeholder="file:///C:/Users/user/Documents/mygame/index.html"
+        />
+        <button id="launch-btn" class="launch-button">
+          プログラム起動
+        </button>
+      </div>
+
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
